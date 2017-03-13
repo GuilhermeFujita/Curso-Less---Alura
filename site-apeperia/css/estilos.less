@@ -3,7 +3,7 @@
 @cor-branca: #fff;
 @raio-da-borda: 1.3em;
 
-.borda-arredondada{
+.borda-arredondada(@raio-da-borda: 0.3em){
   -webkit-border-radius: @raio-da-borda;
   -moz-border-radius: @raio-da-borda;
   -o-border-radius: @raio-da-borda;
@@ -111,7 +111,7 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  .borda-arredondada;
+  .borda-arredondada(2em);
   .sombra-padrao;
   font-weight: bold;
 }
@@ -243,7 +243,7 @@ header .container {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  .borda-arredondada;
+  .borda-arredondada();
   .sombra-padrao;
   margin-left: 2em;
 }
